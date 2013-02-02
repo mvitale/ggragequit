@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GGRageQuit</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div id="PAGE">
+    <div id="LHS">
+      <span id="LOGO" class="bubble">GGRageQuit</span> 
+
+      <div id="CONTENT">
+        <%= yield %>
+      </div>
+    </div>
+
+    <% if @current_user %>
+    <div id="RHS">
+      <div id="USER" class="bubble">
+        <%= image_tag("link.png", :id => "AVATAR") %>
+        <div id="USERNAME">usernamehere</div>
+      </div>
+
+      <div id="NAV" class="bubble">
+        <a class="navItem" href="#">Home</a>
+        <a class="navItem" href="#">Blog</a>
+        <a class="navItem" href="#">Reviews</a>
+        <a class="navItem" href="#">Discussion</a>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</body>
+</html>

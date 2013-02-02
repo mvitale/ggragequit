@@ -1,0 +1,32 @@
+#LOGIN label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.loginField {
+  padding: 5px 8px;
+  width: 350px;
+  height: 100%;
+  margin-bottom: 16px;
+}
+
+.loginField input {
+  height: 20px;
+  line-height: 20px;
+  font-size: 1.25em;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+  
+.btn {
+  padding: 4px 10px;
+  font-size: 1.5em;
+  background-color: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

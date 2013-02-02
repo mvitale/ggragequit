@@ -1,0 +1,21 @@
+<div id="LOGIN">
+  <% if flash[:alert] %>
+    <div id="ERROR" class="error"><%= flash[:alert] %></div>
+  <% end %>
+
+  <%= form_tag login_path do %>
+    <label for="USERNAME_FLD">Username:</label>
+    <div class="bubble loginField">
+      <%= text_field_tag :username, params[:username], :id => "USERNAME_FLD" %>
+    </div>
+
+    <label for="password">Password:</label>
+    <div class="bubble loginField">
+      <%= password_field_tag :password %>
+    </div>
+
+    <div id="LOGIN_BTN" class="btnWrap">
+      <%= submit_tag "Login", :class => "btn" %>
+    </div>
+  <% end %>
+</div>

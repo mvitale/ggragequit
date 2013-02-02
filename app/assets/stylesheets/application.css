@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body, a, input {
+  font-family: "Courier", monospace, sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+.bubble {
+  border-radius: 10px;
+  border: 4px solid black;
+}
+
+#LHS {
+  width: 680px;
+  /* background-color: #F00; */
+  float: left;
+}
+
+#RHS {
+  float: right;
+  width: 200px;
+}
+
+#MAIN_HEAD {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#PAGE {
+  margin: auto;
+  width: 950px;
+}
+
+#LOGO {
+  display: inline-block;
+  line-height: 80px;
+  padding: 10px 25px;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#NAV {
+  margin-top: 10px;
+  padding: 25px 0;
+  height: 240px;
+}
+
+#NAV .navItem {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+#NAV a, #NAV a:visited, #NAV a:active {
+  color: #000;
+}
+
+#USER {
+  padding: 12px 0;
+  height: 160px;
+}
+
+#AVATAR {
+  width: 95px;
+  display: block;
+  margin: 10px auto;
+}
+
+#USERNAME {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+#CONTENT {
+  margin-top: 35px;
+  /* background-color: #F00; */
+  height: 800px;
+}
+
+.avatar {
+  float: left;
+  padding: 10px;
+}
+
+.text {
+  width: 530px;
+  float: right;
+}
+
