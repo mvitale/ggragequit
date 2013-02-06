@@ -1,0 +1,36 @@
+.user {
+  float: left;
+  padding-right: 20px;
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 10px;
+  height: 100px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: .8em;
+  text-align: center;
+}
+
+.post {
+  overflow: hidden;
+  padding: 16px 20px;
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.body {
+  line-height: 20px;
+}
+
+.clear {
+  clear: both;
+  height: 1px;
+}

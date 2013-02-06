@@ -11,7 +11,6 @@ class User < ActiveRecord::Base
   validates :password_hash, :presence => true
   
   has_many :posts
-  has_many :replies
 
   attr_accessible :email, :username, :password_hash
 
