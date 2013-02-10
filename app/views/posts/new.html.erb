@@ -1,0 +1,11 @@
+<%= form_for @post do |f| %>
+  <%= f.error_messages %>
+
+  <%= f.label :title, "Title:" %>
+  <%= f.text_field :title, :class => "bubble" %>
+
+  <%= f.label :body, "Body:" %>
+  <%= f.text_area :body, :class => "bubble" %>
+
+  <%= f.submit "Create post", :class => "btn" %>
+<% end %>
